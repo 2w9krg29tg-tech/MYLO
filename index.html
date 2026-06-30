@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MYLO is a Web3 digital asset and ecosystem focused on utility, design and community.">
+<title>MYLO</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="disclaimer-banner" data-i18n="disclaimer">SITO IN FASE DI TEST — NESSUN TOKEN REALE DISPONIBILE</div>
+
+<header>
+<div class="logo">MYLO</div>
+<div class="header-right">
+<nav id="primaryNav">
+<a href="#about" data-i18n="nav.about">About</a>
+<a href="#tokenomics" data-i18n="nav.tokenomics">Tokenomics</a>
+<a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a>
+<a href="#faq" data-i18n="nav.faq">FAQ</a>
+</nav>
+<select id="langSelect" aria-label="Lingua">
+<option value="it">Italiano</option>
+<option value="en">English</option>
+<option value="es">Español</option>
+<option value="fr">Français</option>
+<option value="de">Deutsch</option>
+<option value="ar">العربية</option>
+<option value="zh">中文</option>
+<option value="hi">हिन्दी</option>
+<option value="ru">Русский</option>
+<option value="ja">日本語</option>
+</select>
+<button class="launch" data-modal-target="appModal" data-i18n="launch">Launch App</button>
+<button class="nav-toggle" id="navToggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="primaryNav">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<section class="hero">
+<span class="ticker">$MYLO — <span data-i18n="ticker">DIGITAL ASSET</span></span>
+<h1 data-i18n="heroTitle">Built with intelligence.<br>Designed for the future.</h1>
+<p data-i18n="heroSubtitle">MYLO is a next-generation Web3 token focused on utility, design and community.</p>
+<button class="cta" data-modal-target="appModal" data-i18n="cta">Buy MYLO</button>
+</section>
+
+<section id="about" class="section">
+<h2 data-i18n="aboutTitle">About MYLO</h2>
+<p data-i18n="aboutText">MYLO is a digital ecosystem combining branding, technology and decentralized finance.</p>
+</section>
+
+<section id="tokenomics" class="section dark">
+<h2 data-i18n="tokenomicsTitle">Tokenomics</h2>
+<div class="grid">
+<div class="card">
+<span class="card-value" data-count="1000000000">0</span>
+<span class="card-label" data-i18n="cardSupplyLabel">Total Supply</span>
+</div>
+<div class="card">
+<span class="card-value" data-count="0" data-suffix="%">0%</span>
+<span class="card-label" data-i18n="cardTaxLabel">Trading Tax</span>
+</div>
+<div class="card">
+<span class="card-value" data-i18n="cardLiquidityValue">Locked</span>
+<span class="card-label" data-i18n="cardLiquidityLabel">Liquidity</span>
+</div>
+<div class="card">
+<span class="card-value" data-i18n="cardGovernanceValue">Community</span>
+<span class="card-label" data-i18n="cardGovernanceLabel">Governance</span>
+</div>
+</div>
+</section>
+
+<section id="roadmap" class="section">
+<h2 data-i18n="roadmapTitle">Roadmap</h2>
+<ul id="roadmapList">
+<li>Phase 1 — Branding & Website</li>
+<li>Phase 2 — Token Deployment</li>
+<li>Phase 3 — Community Growth</li>
+<li>Phase 4 — Exchange Listings</li>
+</ul>
+</section>
+
+<section id="faq" class="section dark">
+<h2 data-i18n="faqTitle">FAQ</h2>
+<div class="faq" id="faqList">
+<div>What is MYLO?</div>
+<p>A Web3 digital asset and its ecosystem.</p>
+<div>Is MYLO safe?</div>
+<p>Security depends on smart contract audits and liquidity locking.</p>
+</div>
+</section>
+
+<footer>
+<p data-i18n="footer">© 2026 MYLO Ecosystem</p>
+<a class="social-link" href="https://www.instagram.com/iamjoseasua" target="_blank" rel="noopener noreferrer">Instagram — @iamjoseasua</a>
+</footer>
+
+<div class="modal" id="appModal" aria-hidden="true">
+<div class="modal-backdrop" data-modal-close></div>
+<div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<button class="modal-close" data-modal-close aria-label="Chiudi">&times;</button>
+<p class="modal-eyebrow">$MYLO</p>
+<h3 id="modalTitle" data-i18n="modalTitle">In arrivo</h3>
+<p data-i18n="modalText">The app and the token contract are still in development. Join the community channels to be notified at launch.</p>
+</div>
+</div>
+
+<script src="translations.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
